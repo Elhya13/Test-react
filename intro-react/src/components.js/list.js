@@ -1,15 +1,14 @@
 function List() {
+    const todos = ["Coffee", "Tea", "Chocolate"]
     return (
     <ul>
-        <li input type="checkbox"> Coffee
+        {todos.map ((hotbeverage)=> (
+        <li key={hotbeverage}>
+            < input type="checkbox" />  {hotbeverage}
+       
         </li>
-        <li input type="checkbox">
-            Tea
-        </li>
-        <li input type="checkbox">
-            Chocolate
-        </li>
+        ))}
     </ul> 
-    )
+    );
 }
 export default List;

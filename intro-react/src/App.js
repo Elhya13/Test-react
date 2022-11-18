@@ -1,5 +1,4 @@
 import "./style/main.scss"
-
 import Input from './components.js/input.js';
 import SubmitButton from './components.js/submit_button';
 import List from './components.js/list';
@@ -11,7 +10,8 @@ function Todolist() {
         <header className="Todo-header">
           <h1> My Todo App</h1>
           </header>
-          <div classNAme="Newtodo">
+          <div className="Newtodo">
+      
           < Input />
           < SubmitButton />
           </div>
